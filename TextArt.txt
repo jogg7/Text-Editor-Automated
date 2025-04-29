@@ -1,0 +1,14 @@
+#include "TextArt.h"
+
+
+void main()
+{
+	system("cls");
+	TextArt T("c:\\temp\\input.txt", 5, 5, 14, 0, 14, 10);
+	T.Display();
+	while (1)
+	{
+		T.ColorNext();
+		Sleep(200);
+	}
+}
